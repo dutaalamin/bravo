@@ -16,6 +16,28 @@ const HeartIcon = () => <svg width="28" height="28" viewBox="0 0 24 24" fill="no
 const WalletIcon = () => <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#004B35" strokeWidth="1.5"><rect x="1" y="4" width="22" height="16" rx="2" /><path d="M1 10h22" /></svg>;
 const CheckCircle = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="#00A862" stroke="white" strokeWidth="2"><circle cx="12" cy="12" r="10" /><polyline points="9 12 11.5 14.5 16 9.5" /></svg>;
 const SparkleIcon = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#004B35" strokeWidth="2"><path d="M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z" /></svg>;
+const MegaphoneIcon = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 11l18-5v12L3 14v-3z" /><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6" /></svg>;
+const SettingsIcon = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" /></svg>;
+const FunnelIcon = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" /></svg>;
+const DataIcon = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><ellipse cx="12" cy="5" rx="9" ry="3" /><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" /><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" /></svg>;
+const LinkIcon = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg>;
+const ChatIcon = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg>;
+const BotIcon = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="11" width="18" height="10" rx="2" /><circle cx="12" cy="5" r="2" /><path d="M12 7v4" /><line x1="8" y1="16" x2="8" y2="16" /><line x1="16" y1="16" x2="16" y2="16" /></svg>;
+const BagIcon = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" /><line x1="3" y1="6" x2="21" y2="6" /><path d="M16 10a4 4 0 0 1-8 0" /></svg>;
+const BriefcaseIcon = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2" /><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /></svg>;
+const CartIcon = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="9" cy="21" r="1" /><circle cx="20" cy="21" r="1" /><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" /></svg>;
+const CodeIcon = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" /></svg>;
+const PenIcon = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 19l7-7 3 3-7 7-3-3z" /><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" /><path d="M2 2l7.586 7.586" /><circle cx="11" cy="11" r="2" /></svg>;
+const BookIcon = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" /></svg>;
+const SearchIcon = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>;
+const TemplateIcon = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2" /><line x1="3" y1="9" x2="21" y2="9" /><line x1="9" y1="21" x2="9" y2="9" /></svg>;
+const TrendIcon = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18" /><polyline points="17 6 23 6 23 12" /></svg>;
+const UsersIcon = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>;
+const CalendarIcon = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" /></svg>;
+const HandshakeIcon = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2 12a10 10 0 1 0 20 0 10 10 0 0 0-20 0z" /><path d="M7.7 13.5L12 9.2l4.3 4.3" /><line x1="12" y1="9.2" x2="12" y2="17" /></svg>;
+const HelpIcon = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><line x1="12" y1="17" x2="12.01" y2="17" /></svg>;
+const BarChartIcon = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><line x1="18" y1="20" x2="18" y2="10" /><line x1="12" y1="20" x2="12" y2="4" /><line x1="6" y1="20" x2="6" y2="14" /></svg>;
+const CalculatorIcon = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="4" y="2" width="16" height="20" rx="2" ry="2" /><line x1="8" y1="6" x2="16" y2="6" /><line x1="16" y1="14" x2="16" y2="14" /></svg>;
 
 /* ─── scroll animation hook ─── */
 function useScrollReveal() {
@@ -40,26 +62,26 @@ const megaMenuData = {
         title: 'Capabilities',
         type: 'detailed',
         items: [
-          { title: 'Campaigns & automation', desc: 'Boost conversions with automated multichannel customer journeys.', icon: '📢' },
-          { title: 'Transactional messaging', desc: 'Send real-time email, SMS, & WhatsApp messages triggered via SMTP relay and API.', icon: '⚙️' },
-          { title: 'Sales management', desc: 'Accelerate revenue with custom pipelines, sales automation, chat & more.', icon: '🎯' },
-          { title: 'Bravo Data Platform', desc: 'Unify and activate customer data for smarter marketing and faster time-to-value.', icon: '📊' },
-          { title: 'Customer loyalty', desc: 'Turn customers into loyal fans with a fully integrated rewards program.', icon: '⭐' },
-          { title: 'Integrations', desc: 'Connect Bravo with 150+ digital tools like Shopify, WordPress, Stripe, Zapier and more.', icon: '🔗' },
+          { title: 'Campaigns & automation', desc: 'Boost conversions with automated multichannel customer journeys.', icon: <MegaphoneIcon /> },
+          { title: 'Transactional messaging', desc: 'Send real-time email, SMS, & WhatsApp messages triggered via SMTP relay and API.', icon: <SettingsIcon /> },
+          { title: 'Sales management', desc: 'Accelerate revenue with custom pipelines, sales automation, chat & more.', icon: <FunnelIcon /> },
+          { title: 'Bravo Data Platform', desc: 'Unify and activate customer data for smarter marketing and faster time-to-value.', icon: <DataIcon /> },
+          { title: 'Customer loyalty', desc: 'Turn customers into loyal fans with a fully integrated rewards program.', icon: <HeartIcon /> },
+          { title: 'Integrations', desc: 'Connect Bravo with 150+ digital tools like Shopify, WordPress, Stripe, Zapier and more.', icon: <LinkIcon /> },
         ]
       },
       {
         title: 'Channels',
         type: 'simple',
         items: [
-          { title: 'Email', icon: '✉️' },
-          { title: 'SMS', icon: '📱' },
-          { title: 'WhatsApp', icon: '💬' },
-          { title: 'Web & mobile push', icon: '🔔' },
-          { title: 'Live chat', icon: '💬' },
-          { title: 'Chatbot', icon: '🤖' },
-          { title: 'Wallet', icon: '💳' },
-          { title: 'Phone', icon: '📞' }
+          { title: 'Email', icon: <MailIcon /> },
+          { title: 'SMS', icon: <PhoneIcon /> },
+          { title: 'WhatsApp', icon: <ChatIcon /> },
+          { title: 'Web & mobile push', icon: <BellIcon /> },
+          { title: 'Live chat', icon: <ChatIcon /> },
+          { title: 'Chatbot', icon: <BotIcon /> },
+          { title: 'Wallet', icon: <WalletIcon /> },
+          { title: 'Phone', icon: <PhoneIcon /> }
         ]
       }
     ]
@@ -70,10 +92,10 @@ const megaMenuData = {
         title: 'Solutions',
         type: 'detailed',
         items: [
-          { title: 'Entrepreneurs & small business', desc: 'Run campaigns, automate marketing and manage contacts easily.', icon: '🛍️' },
-          { title: 'Mid-market & enterprise', desc: 'Get custom solutions, tailored onboarding, full data control and enterprise-grade security.', icon: '🏢' },
-          { title: 'Ecommerce & retail', desc: 'Recover abandoned carts, personalize product recommendations and boost loyalty.', icon: '🛒' },
-          { title: 'Developers', desc: "Build, extend, and integrate with Bravo's developer guides, open API, SDKs, and code recipes.", icon: '👨‍💻' },
+          { title: 'Entrepreneurs & small business', desc: 'Run campaigns, automate marketing and manage contacts easily.', icon: <BagIcon /> },
+          { title: 'Mid-market & enterprise', desc: 'Get custom solutions, tailored onboarding, full data control and enterprise-grade security.', icon: <BriefcaseIcon /> },
+          { title: 'Ecommerce & retail', desc: 'Recover abandoned carts, personalize product recommendations and boost loyalty.', icon: <CartIcon /> },
+          { title: 'Developers', desc: "Build, extend, and integrate with Bravo's developer guides, open API, SDKs, and code recipes.", icon: <CodeIcon /> },
         ]
       }
     ]
@@ -84,35 +106,35 @@ const megaMenuData = {
         title: 'Resource center',
         type: 'simple',
         items: [
-          { title: 'Blog', icon: '📝' },
-          { title: 'Ebooks', icon: '📖' },
-          { title: 'Case studies', icon: '🔎' },
-          { title: 'Email templates', icon: '✉️' },
-          { title: 'Email marketing platforms', icon: '📈' },
-          { title: 'Mailchimp alternatives', icon: '🔄' },
-          { title: 'Tools & Calculators', icon: '🧮' },
+          { title: 'Blog', icon: <PenIcon /> },
+          { title: 'Ebooks', icon: <BookIcon /> },
+          { title: 'Case studies', icon: <SearchIcon /> },
+          { title: 'Email templates', icon: <TemplateIcon /> },
+          { title: 'Email marketing platforms', icon: <TrendIcon /> },
+          { title: 'Mailchimp alternatives', icon: <LinkIcon /> },
+          { title: 'Tools & Calculators', icon: <CalculatorIcon /> },
         ]
       },
       {
         title: 'Ecosystem',
         type: 'simple',
         items: [
-          { title: 'Integrations', icon: '🔗' },
-          { title: 'Product updates', icon: '✨' },
-          { title: 'Community', icon: '👥' },
-          { title: 'Events', icon: '📅' },
-          { title: 'Partner programs', icon: '🤝' },
-          { title: 'Find an expert', icon: '🔍' },
+          { title: 'Integrations', icon: <LinkIcon /> },
+          { title: 'Product updates', icon: <SparkleIcon /> },
+          { title: 'Community', icon: <UsersIcon /> },
+          { title: 'Events', icon: <CalendarIcon /> },
+          { title: 'Partner programs', icon: <HandshakeIcon /> },
+          { title: 'Find an expert', icon: <SearchIcon /> },
         ]
       },
       {
         title: 'Support',
         type: 'simple',
         items: [
-          { title: 'Help center', icon: '❓' },
-          { title: 'Contact us', icon: '📞' },
-          { title: 'API docs', icon: '💻' },
-          { title: 'Platform status', icon: '📊' },
+          { title: 'Help center', icon: <HelpIcon /> },
+          { title: 'Contact us', icon: <PhoneIcon /> },
+          { title: 'API docs', icon: <CodeIcon /> },
+          { title: 'Platform status', icon: <BarChartIcon /> },
         ]
       }
     ]
@@ -149,7 +171,7 @@ function Navbar() {
                 
                 {/* Mega Menu Dropdown */}
                 {l !== 'Pricing' && megaMenuData[l] && (
-                  <div className={`absolute top-full ${l === 'Resources' ? 'right-0 rounded-tl-xl' : 'left-0 rounded-tr-xl'} hidden group-hover:flex w-max min-w-[500px] ${l === 'Resources' ? 'min-w-[800px]' : ''} bg-white rounded-b-xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-gray-100 p-8 z-10 pt-8 -mt-1`} >
+                  <div className={`absolute top-full left-0 rounded-tr-xl hidden group-hover:flex w-max min-w-[500px] ${l === 'Resources' ? 'min-w-[800px]' : ''} bg-white rounded-b-xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-gray-100 p-8 z-10 pt-8 -mt-1`} >
                     <div className="flex gap-10 w-full">
                       {megaMenuData[l].cols.map((col, idx) => (
                         <div key={col.title} className="flex gap-10">
