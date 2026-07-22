@@ -51,11 +51,69 @@ function Navbar() {
           <a href="#" className="text-bravo-green text-3xl md:text-[34px] font-extrabold tracking-tight flex items-center gap-1 select-none">
             Bravo
           </a>
-          <div className="hidden lg:flex items-center gap-1">
+          <div className="hidden lg:flex items-center gap-1 h-full">
             {['Platform', 'Solutions', 'Pricing', 'Resources'].map((l) => (
-              <a key={l} href={`#${l.toLowerCase()}`} className="flex items-center gap-1.5 px-3.5 py-2 text-[18px] font-medium text-bravo-dark hover:text-bravo-green transition-colors rounded-lg">
-                {l} {l !== 'Pricing' && <ChevronDown className="w-4 h-4 opacity-70 stroke-2" />}
-              </a>
+              <div key={l} className="group relative h-full flex flex-col justify-center">
+                <a href={`#${l.toLowerCase()}`} className="flex items-center gap-1.5 px-4 py-2.5 text-[18px] font-medium text-bravo-dark hover:text-bravo-green group-hover:bg-white group-hover:rounded-t-xl transition-colors relative z-20">
+                  {l} {l !== 'Pricing' && <ChevronDown className="w-4 h-4 opacity-70 stroke-2 group-hover:-rotate-180 transition-transform duration-300" />}
+                </a>
+                
+                {/* Mega Menu Dropdown */}
+                {l !== 'Pricing' && (
+                  <div className={`absolute top-full ${l === 'Resources' ? 'right-0 rounded-tl-xl' : 'left-0 rounded-tr-xl'} hidden group-hover:flex w-max min-w-[600px] ${l === 'Resources' ? 'min-w-[800px]' : ''} bg-white rounded-b-xl shadow-xl border border-gray-100 p-8 z-10 pt-8 -mt-1`} >
+                    <div className="flex gap-10 w-full">
+                      {/* Column 1 */}
+                      <div className="flex-1">
+                        <h4 className="text-gray-500 font-semibold mb-6 text-base">{l === 'Platform' ? 'Capabilities' : l === 'Solutions' ? 'Solutions' : 'Resource center'}</h4>
+                        <div className="space-y-6">
+                          {[1, 2, 3].map(i => (
+                            <div key={i} className="flex gap-4 items-start cursor-pointer group/item">
+                              <div className="w-10 h-10 rounded border border-gray-200 bg-gray-50 shrink-0 group-hover/item:border-gray-300 transition-colors flex items-center justify-center text-gray-300 text-xs">Icon</div>
+                              <div>
+                                <div className="h-4 w-32 bg-gray-200 rounded mb-2 group-hover/item:bg-gray-300 transition-colors"></div>
+                                <div className="h-3 w-48 bg-gray-100 rounded group-hover/item:bg-gray-200 transition-colors"></div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      
+                      <div className="w-px bg-gray-100"></div>
+
+                      {/* Column 2 */}
+                      <div className="flex-1">
+                        <h4 className="text-gray-500 font-semibold mb-6 text-base">{l === 'Platform' ? 'Channels' : l === 'Solutions' ? 'By Industry' : 'Ecosystem'}</h4>
+                        <div className="space-y-6">
+                          {[1, 2, 3, 4].map(i => (
+                            <div key={i} className="flex gap-4 items-center cursor-pointer group/item">
+                              <div className="w-10 h-10 rounded border border-gray-200 bg-gray-50 shrink-0 group-hover/item:border-gray-300 transition-colors flex items-center justify-center text-gray-300 text-xs">Icon</div>
+                              <div className="h-4 w-24 bg-gray-200 rounded group-hover/item:bg-gray-300 transition-colors"></div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      
+                      {/* Column 3 (Only for Resources) */}
+                      {l === 'Resources' && (
+                        <>
+                          <div className="w-px bg-gray-100"></div>
+                          <div className="flex-1">
+                            <h4 className="text-gray-500 font-semibold mb-6 text-base">Support</h4>
+                            <div className="space-y-6">
+                              {[1, 2, 3].map(i => (
+                                <div key={i} className="flex gap-4 items-center cursor-pointer group/item">
+                                  <div className="w-10 h-10 rounded border border-gray-200 bg-gray-50 shrink-0 group-hover/item:border-gray-300 transition-colors flex items-center justify-center text-gray-300 text-xs">Icon</div>
+                                  <div className="h-4 w-24 bg-gray-200 rounded group-hover/item:bg-gray-300 transition-colors"></div>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </>
+                      )}
+                    </div>
+                  </div>
+                )}
+              </div>
             ))}
           </div>
         </div>
