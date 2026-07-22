@@ -1139,6 +1139,7 @@ function EngageAudience() {
   ];
 
   const scrollRef = useRef(null);
+  return (
     <section className="py-20 md:py-28 bg-white">
       <div className="max-w-[1200px] mx-auto px-6 relative">
         <h2 className="font-serif text-bravo-dark text-3xl md:text-[2.5rem] text-center mb-16 animate-on-scroll">
