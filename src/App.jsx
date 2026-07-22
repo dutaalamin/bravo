@@ -982,27 +982,26 @@ function EngageAudience() {
       title: 'Mobile Wallet',
       visual: (
         <div className="relative w-full h-full flex items-center justify-center">
-          <div className="w-40 h-28 bg-gray-100 rounded-2xl border border-gray-200 shadow-sm relative z-10 p-3 flex flex-col">
-            <div className="text-[10px] font-bold text-gray-800 mb-1.5">Your loyalty card</div>
-            <div className="h-2 w-2/3 bg-gray-200 rounded mb-1"></div>
-            <div className="h-2 w-1/2 bg-gray-200 rounded mb-4"></div>
-            <div className="flex-1 bg-white rounded-lg flex items-center px-1.5 py-1 justify-between opacity-60">
-               <div className="w-[1px] h-4 bg-gray-800"></div>
-               <div className="w-[2px] h-4 bg-gray-800"></div>
-               <div className="w-[1px] h-4 bg-gray-800"></div>
-               <div className="w-[3px] h-4 bg-gray-800"></div>
-               <div className="w-[1px] h-4 bg-gray-800"></div>
-               <div className="w-[2px] h-4 bg-gray-800"></div>
-               <div className="w-[1px] h-4 bg-gray-800"></div>
-               <div className="w-[3px] h-4 bg-gray-800"></div>
-               <div className="w-[1px] h-4 bg-gray-800"></div>
-               <div className="w-[2px] h-4 bg-gray-800"></div>
+          <div className="w-40 h-28 bg-[#e8e2f4] rounded-2xl border-2 border-[#d0c6e1] shadow-sm relative z-10 p-3 flex flex-col justify-between">
+            <div className="text-[10px] font-bold text-gray-800 mb-1.5 ml-1">Your loyalty card</div>
+            <div className="h-2 w-2/3 bg-[#d0c6e1] rounded mb-1 mx-1"></div>
+            <div className="h-2 w-1/2 bg-[#d0c6e1] rounded mb-2 mx-1"></div>
+            <div className="bg-white rounded-lg flex items-center px-2 py-1.5 justify-between shadow-inner w-[90%] mx-auto mt-1">
+               <div className="w-[2px] h-6 bg-gray-300"></div>
+               <div className="w-[4px] h-6 bg-gray-300"></div>
+               <div className="w-[2px] h-6 bg-gray-300"></div>
+               <div className="w-[6px] h-6 bg-gray-300"></div>
+               <div className="w-[2px] h-6 bg-gray-300"></div>
+               <div className="w-[4px] h-6 bg-gray-300"></div>
+               <div className="w-[2px] h-6 bg-gray-300"></div>
+               <div className="w-[6px] h-6 bg-gray-300"></div>
+               <div className="w-[2px] h-6 bg-gray-300"></div>
+               <div className="w-[4px] h-6 bg-gray-300"></div>
             </div>
           </div>
-          <div className="absolute top-1/2 left-1/2 ml-4 -mt-8 w-12 h-12 bg-[#1B1B1C] rounded-xl flex items-center justify-center shadow-lg z-30 text-white">
-            <ArrowRight />
+          <div className="absolute top-[0%] right-2 w-12 h-12 bg-[#c8f1cb] rounded-xl border-2 border-white shadow-md z-20 rotate-[15deg] flex items-center justify-center text-[#004B35]">
+            <WalletIcon className="w-6 h-6" />
           </div>
-          <div className="absolute top-[10%] right-6 w-12 h-16 bg-[#c8f1cb] rounded-xl border border-green-200 shadow-sm z-0 rotate-[15deg]"></div>
         </div>
       )
     },
