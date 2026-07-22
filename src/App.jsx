@@ -31,6 +31,95 @@ function useScrollReveal() {
 }
 
 /* ══════════════════════════════════════════════
+   MEGA MENU DATA
+   ══════════════════════════════════════════════ */
+const megaMenuData = {
+  Platform: {
+    cols: [
+      {
+        title: 'Capabilities',
+        type: 'detailed',
+        items: [
+          { title: 'Campaigns & automation', desc: 'Boost conversions with automated multichannel customer journeys.', icon: '📢' },
+          { title: 'Transactional messaging', desc: 'Send real-time email, SMS, & WhatsApp messages triggered via SMTP relay and API.', icon: '⚙️' },
+          { title: 'Sales management', desc: 'Accelerate revenue with custom pipelines, sales automation, chat & more.', icon: '🎯' },
+          { title: 'Bravo Data Platform', desc: 'Unify and activate customer data for smarter marketing and faster time-to-value.', icon: '📊' },
+          { title: 'Customer loyalty', desc: 'Turn customers into loyal fans with a fully integrated rewards program.', icon: '⭐' },
+          { title: 'Integrations', desc: 'Connect Bravo with 150+ digital tools like Shopify, WordPress, Stripe, Zapier and more.', icon: '🔗' },
+        ]
+      },
+      {
+        title: 'Channels',
+        type: 'simple',
+        items: [
+          { title: 'Email', icon: '✉️' },
+          { title: 'SMS', icon: '📱' },
+          { title: 'WhatsApp', icon: '💬' },
+          { title: 'Web & mobile push', icon: '🔔' },
+          { title: 'Live chat', icon: '💬' },
+          { title: 'Chatbot', icon: '🤖' },
+          { title: 'Wallet', icon: '💳' },
+          { title: 'Phone', icon: '📞' }
+        ]
+      }
+    ]
+  },
+  Solutions: {
+    cols: [
+      {
+        title: 'Solutions',
+        type: 'detailed',
+        items: [
+          { title: 'Entrepreneurs & small business', desc: 'Run campaigns, automate marketing and manage contacts easily.', icon: '🛍️' },
+          { title: 'Mid-market & enterprise', desc: 'Get custom solutions, tailored onboarding, full data control and enterprise-grade security.', icon: '🏢' },
+          { title: 'Ecommerce & retail', desc: 'Recover abandoned carts, personalize product recommendations and boost loyalty.', icon: '🛒' },
+          { title: 'Developers', desc: "Build, extend, and integrate with Bravo's developer guides, open API, SDKs, and code recipes.", icon: '👨‍💻' },
+        ]
+      }
+    ]
+  },
+  Resources: {
+    cols: [
+      {
+        title: 'Resource center',
+        type: 'simple',
+        items: [
+          { title: 'Blog', icon: '📝' },
+          { title: 'Ebooks', icon: '📖' },
+          { title: 'Case studies', icon: '🔎' },
+          { title: 'Email templates', icon: '✉️' },
+          { title: 'Email marketing platforms', icon: '📈' },
+          { title: 'Mailchimp alternatives', icon: '🔄' },
+          { title: 'Tools & Calculators', icon: '🧮' },
+        ]
+      },
+      {
+        title: 'Ecosystem',
+        type: 'simple',
+        items: [
+          { title: 'Integrations', icon: '🔗' },
+          { title: 'Product updates', icon: '✨' },
+          { title: 'Community', icon: '👥' },
+          { title: 'Events', icon: '📅' },
+          { title: 'Partner programs', icon: '🤝' },
+          { title: 'Find an expert', icon: '🔍' },
+        ]
+      },
+      {
+        title: 'Support',
+        type: 'simple',
+        items: [
+          { title: 'Help center', icon: '❓' },
+          { title: 'Contact us', icon: '📞' },
+          { title: 'API docs', icon: '💻' },
+          { title: 'Platform status', icon: '📊' },
+        ]
+      }
+    ]
+  }
+};
+
+/* ══════════════════════════════════════════════
    NAVBAR
    ══════════════════════════════════════════════ */
 function Navbar() {
@@ -59,57 +148,30 @@ function Navbar() {
                 </a>
                 
                 {/* Mega Menu Dropdown */}
-                {l !== 'Pricing' && (
-                  <div className={`absolute top-full ${l === 'Resources' ? 'right-0 rounded-tl-xl' : 'left-0 rounded-tr-xl'} hidden group-hover:flex w-max min-w-[600px] ${l === 'Resources' ? 'min-w-[800px]' : ''} bg-white rounded-b-xl shadow-xl border border-gray-100 p-8 z-10 pt-8 -mt-1`} >
+                {l !== 'Pricing' && megaMenuData[l] && (
+                  <div className={`absolute top-full ${l === 'Resources' ? 'right-0 rounded-tl-xl' : 'left-0 rounded-tr-xl'} hidden group-hover:flex w-max min-w-[500px] ${l === 'Resources' ? 'min-w-[800px]' : ''} bg-white rounded-b-xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-gray-100 p-8 z-10 pt-8 -mt-1`} >
                     <div className="flex gap-10 w-full">
-                      {/* Column 1 */}
-                      <div className="flex-1">
-                        <h4 className="text-gray-500 font-semibold mb-6 text-base">{l === 'Platform' ? 'Capabilities' : l === 'Solutions' ? 'Solutions' : 'Resource center'}</h4>
-                        <div className="space-y-6">
-                          {[1, 2, 3].map(i => (
-                            <div key={i} className="flex gap-4 items-start cursor-pointer group/item">
-                              <div className="w-10 h-10 rounded border border-gray-200 bg-gray-50 shrink-0 group-hover/item:border-gray-300 transition-colors flex items-center justify-center text-gray-300 text-xs">Icon</div>
-                              <div>
-                                <div className="h-4 w-32 bg-gray-200 rounded mb-2 group-hover/item:bg-gray-300 transition-colors"></div>
-                                <div className="h-3 w-48 bg-gray-100 rounded group-hover/item:bg-gray-200 transition-colors"></div>
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                      
-                      <div className="w-px bg-gray-100"></div>
-
-                      {/* Column 2 */}
-                      <div className="flex-1">
-                        <h4 className="text-gray-500 font-semibold mb-6 text-base">{l === 'Platform' ? 'Channels' : l === 'Solutions' ? 'By Industry' : 'Ecosystem'}</h4>
-                        <div className="space-y-6">
-                          {[1, 2, 3, 4].map(i => (
-                            <div key={i} className="flex gap-4 items-center cursor-pointer group/item">
-                              <div className="w-10 h-10 rounded border border-gray-200 bg-gray-50 shrink-0 group-hover/item:border-gray-300 transition-colors flex items-center justify-center text-gray-300 text-xs">Icon</div>
-                              <div className="h-4 w-24 bg-gray-200 rounded group-hover/item:bg-gray-300 transition-colors"></div>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                      
-                      {/* Column 3 (Only for Resources) */}
-                      {l === 'Resources' && (
-                        <>
-                          <div className="w-px bg-gray-100"></div>
-                          <div className="flex-1">
-                            <h4 className="text-gray-500 font-semibold mb-6 text-base">Support</h4>
-                            <div className="space-y-6">
-                              {[1, 2, 3].map(i => (
-                                <div key={i} className="flex gap-4 items-center cursor-pointer group/item">
-                                  <div className="w-10 h-10 rounded border border-gray-200 bg-gray-50 shrink-0 group-hover/item:border-gray-300 transition-colors flex items-center justify-center text-gray-300 text-xs">Icon</div>
-                                  <div className="h-4 w-24 bg-gray-200 rounded group-hover/item:bg-gray-300 transition-colors"></div>
-                                </div>
+                      {megaMenuData[l].cols.map((col, idx) => (
+                        <div key={col.title} className="flex gap-10">
+                          {idx > 0 && <div className="w-px bg-gray-100"></div>}
+                          <div className={col.type === 'detailed' ? 'w-[380px]' : 'w-[220px]'}>
+                            <h4 className="text-gray-500 font-semibold mb-6 text-[15px]">{col.title}</h4>
+                            <div className={`grid ${col.type === 'simple' && l === 'Resources' ? 'gap-y-5' : 'gap-y-6'}`}>
+                              {col.items.map((item, i) => (
+                                <a href="#" key={i} className="flex gap-4 items-start group/item">
+                                  <div className="w-10 h-10 rounded border border-gray-100 bg-gray-50 shrink-0 flex items-center justify-center text-xl group-hover/item:border-gray-300 group-hover/item:shadow-sm transition-all shadow-sm">
+                                    {item.icon}
+                                  </div>
+                                  <div className={col.type === 'detailed' ? 'pt-0.5' : 'pt-2.5'}>
+                                    <div className="text-[15px] font-semibold text-gray-800 group-hover/item:text-bravo-green transition-colors leading-tight mb-1">{item.title}</div>
+                                    {item.desc && <div className="text-[13px] text-gray-500 leading-relaxed pr-2">{item.desc}</div>}
+                                  </div>
+                                </a>
                               ))}
                             </div>
                           </div>
-                        </>
-                      )}
+                        </div>
+                      ))}
                     </div>
                   </div>
                 )}
